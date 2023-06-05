@@ -1,0 +1,139 @@
+﻿## React JS Folder Structure
+
+`build`  
+*Build files folder*  
+`config`   
+*Configuration folder*  
+----└── `jest`  
+----*Jest settings folder*  
+---------└── `cssTransform.js`  
+---------*CSS Jest Transformer*  
+---------└── `fileTransform.js`  
+---------*Files Jest Transformer*  
+----└── `env.js`  
+----*Environment settings*  
+----└── `paths.js`  
+----*Configuration paths settings*  
+----└── `webpack.config.dev.js`  
+----*Development environment configuration*  
+----└── `webpack.config.prod.js`  
+----*Production environment configuration*  
+----└── `webpackDevServer.config.js`  
+----*Development server settings*  
+`node modules`  
+*Node packages*  
+`scripts`  
+*Node scripts folder*  
+----└── `build.js`  
+----*Script to create build*  
+----└── `start.js`  
+----*Script to run development server*  
+----└── `test.js`  
+----*Script for running app test*  
+`src`  
+*Main App Folder*  
+----└── `config`  
+----*App Configuration folder*  
+---------└── `settings.js`  
+---------*Constants and other app settings*  
+----└── `includes`  
+----*Included Assets folder*  
+---------└── `bootstrap`  
+---------*Bootstrap folder*  
+---------------└── `css`  
+---------------*Bootstrap CSS folder*  
+---------------└── `fonts`  
+---------------*Bootstrap Fonts folder*  
+---------------└── `js`  
+---------------*Bootstrap JS folder*  
+---------└── `custom`  
+---------*Custom CSS and JS files folder*  
+---------└── `img`  
+---------*Images folder*
+----└── `utils`  
+----*App utilities folder*  
+---------└── `apiService.js`  
+---------*Axios interceptors file*  
+---------└── `clearAuth.js`  
+---------*Remove auth key utility file*  
+---------└──  `constants.js`
+----└── `views`  
+----*App View Components folder*  
+---------└── `components`  
+---------*Presentational / Common components folder*  
+--------------└── `CustomRoute.js`   
+--------------*Renders custom route file components*  
+--------------└── `FormTemplate.js`   
+--------------*Form component template for app forms*  
+--------------└── `MainHeader.js`   
+--------------*App header navigation component*  
+--------------└── `PrivateRoute.js`   
+--------------*Application's protected route that includes main header component (MODULES routes)*  
+--------------└── `FormTemplate.js`   
+--------------*Table component template for app tables*  
+---------└── `containers`  
+---------*Container / Module components folder*  
+--------------└── `ModuleName`   
+--------------*Sample module folder*  
+-------------------└── `state`  
+------------------*Redux state folders*  
+-------------------------└── `actions.js`  
+-------------------------*Module action creators file*  
+-------------------------└── `apiRoutes.js`  
+-------------------------*Module API routes constants file*  
+-------------------------└── `index.js`  
+-------------------------*Module exports file*
+-------------------------└── `operations.js`  
+-------------------------*Module functions and API calls files*  
+-------------------------└── `reducers.js`  
+-------------------------*Module reducers file*  
+-------------------------└── `saga.js`  
+-------------------------*Module saga effects file*  
+-------------------------└── `selectors.js`  
+-------------------------*Module state selectors file*  
+-------------------------└── `types.js`  
+---------------------------*Module action types file*  
+-------------------└── `CustomComponent`   
+-------------------*Customized module components folder*  
+------------------------└── `CustomWell.js`   
+------------------------*Sample customized component file*  
+-------------------└── `TabOne`   
+-------------------*Sample deep level container folder*  
+------------------------└── `state`   
+------------------------*Deep level container state folder* 
+--------------------------------Other ducks folder
+------------------------└── `index.js`   
+------------------------*Main nested container file*  
+------------------------└── `Emergency.js`   
+------------------------*Sample nested container component*  
+------------------------└── `PersonalInfo.js`   
+------------------------*Sample nested container component*  
+-------------------└── `ModuleMain.js`   
+-------------------*Sample Main module container file*  
+-------------------└── `SampleContainer.js`   
+-------------------*Sample single level container*  
+-------------------└── `routes.js`   
+-------------------*Contains module's route definitions*  
+--------------└── `Errors`   
+--------------*Custom Error pages folder*  
+-------------------└── `404.js`   
+-------------------*Sample "Page Not Found" page*  
+-------------└── `Login`   
+--------------*Login/Authentication Folder*  
+-------------------└── `state`   
+------------------*Redux state folders* 
+-------------------Other ducks folder
+ -------------------└── `Login.js`   
+-------------------*Login container file*  
+----└── `app.modules.js`  
+----*Main store/routes configuration file*  
+----└── `index.js`  
+----*App Root file*  
+----└── `.gitignore`  
+----*Git Ignore file*  
+----└── `db.json`  
+----*Json-server db file*  
+----└── `package-lock.json`  
+----*Package dependency tree*  
+----└── `package.json`  
+----*Project packages file* 
